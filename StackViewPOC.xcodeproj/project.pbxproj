@@ -14,6 +14,7 @@
 		41873E2F1BD8617C00C882D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41873E2E1BD8617C00C882D1 /* Assets.xcassets */; };
 		41873E321BD8617C00C882D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41873E301BD8617C00C882D1 /* LaunchScreen.storyboard */; };
 		41873E3D1BD8617C00C882D1 /* StackViewPOCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41873E3C1BD8617C00C882D1 /* StackViewPOCUITests.swift */; };
+		41873E4D1BD87C0000C882D1 /* NSLayoutConstraint+EvenDistribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 41873E4C1BD87C0000C882D1 /* NSLayoutConstraint+EvenDistribution.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,9 @@
 		41873E381BD8617C00C882D1 /* StackViewPOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackViewPOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41873E3C1BD8617C00C882D1 /* StackViewPOCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewPOCUITests.swift; sourceTree = "<group>"; };
 		41873E3E1BD8617C00C882D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41873E481BD87BC600C882D1 /* StackViewPOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StackViewPOC-Bridging-Header.h"; sourceTree = "<group>"; };
+		41873E4C1BD87C0000C882D1 /* NSLayoutConstraint+EvenDistribution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+EvenDistribution.m"; sourceTree = "<group>"; };
+		41873E4E1BD87C3300C882D1 /* NSLayoutConstraint+EvenDistribution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+EvenDistribution.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,9 @@
 				41873E301BD8617C00C882D1 /* LaunchScreen.storyboard */,
 				41873E331BD8617C00C882D1 /* Info.plist */,
 				41873E2B1BD8617C00C882D1 /* StackViewPOC.xcdatamodeld */,
+				41873E4C1BD87C0000C882D1 /* NSLayoutConstraint+EvenDistribution.m */,
+				41873E4E1BD87C3300C882D1 /* NSLayoutConstraint+EvenDistribution.h */,
+				41873E481BD87BC600C882D1 /* StackViewPOC-Bridging-Header.h */,
 			);
 			path = StackViewPOC;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 		41873E191BD8617C00C882D1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = FuzeIdea;
 				TargetAttributes = {
@@ -200,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41873E271BD8617C00C882D1 /* ViewController.swift in Sources */,
+				41873E4D1BD87C0000C882D1 /* NSLayoutConstraint+EvenDistribution.m in Sources */,
 				41873E251BD8617C00C882D1 /* AppDelegate.swift in Sources */,
 				41873E2D1BD8617C00C882D1 /* StackViewPOC.xcdatamodeld in Sources */,
 			);
@@ -328,10 +337,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = StackViewPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fuzeidea.StackViewPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StackViewPOC/StackViewPOC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -339,10 +351,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = StackViewPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fuzeidea.StackViewPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StackViewPOC/StackViewPOC-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -389,6 +403,7 @@
 				41873E431BD8617C00C882D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41873E441BD8617C00C882D1 /* Build configuration list for PBXNativeTarget "StackViewPOCUITests" */ = {
 			isa = XCConfigurationList;
@@ -397,6 +412,7 @@
 				41873E461BD8617C00C882D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
