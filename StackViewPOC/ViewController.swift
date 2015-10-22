@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         stackView.addArrangedSubview(view1)
         stackView.addArrangedSubview(view2)
         stackView.addArrangedSubview(view3)
-        s
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
